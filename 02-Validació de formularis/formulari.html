@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -12,40 +11,50 @@
 <body>
     <h2>Registre d'usuari</h2>
 
-    <form action="/processar_formulari" method="post">
-        <!-- Camp de nom -->
-        <label for="nom">Nom:</label>
-        <input type="text" id="nom" name="nom" required>
 
-        <br>
+    <!-- Camp de nom -->
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom">
 
-        <!-- Camp de correu electrònic -->
-        <label for="email">Correu electrònic:</label>
-        <input type="email" id="email" name="email" required>
+    <br><br>
 
-        <br>
+    <!-- Camp de correu electrònic -->
+    <label for="email">Correu electrònic:</label>
+    <input type="email" id="email" name="email">
 
-        <!-- Camp de contrasenya -->
-        <label for="contrasenya">Contrasenya:</label>
-        <input type="password" id="contrasenya" name="contrasenya" required>
+    <br><br>
 
-        <br>
+    <!-- Camp de contrasenya -->
+    <label for="contrasenya">Contrasenya:</label>
+    <input type="password" id="contrasenya" name="contrasenya">
 
-        <!-- Camp de confirmació de contrasenya -->
-        <label for="confirm_contrasenya">Confirmació de contrasenya:</label>
-        <input type="password" id="confirm_contrasenya" name="confirm_contrasenya" required>
+    <div id="requisits">
+        <ul>
+            <li id="caracters">Entre 8-15 caracters</li>
+            <li id="mayus">1 lletra mayuscula</li>
+            <li id="minus">1 lletra minuscula</li>
+            <li id="numero">1 numero</li>
+            <li id="especial">1 caracter especial</li>
+        </ul>
+    </div>
+    <br><br>
 
-        <br>
+    <!-- Camp de confirmació de contrasenya -->
+    <label for="confirm_contrasenya">Confirmació de contrasenya:</label>
+    <input type="password" id="confirm_contrasenya" name="confirm_contrasenya">
 
-        <!-- Camp d'adreça postal -->
-        <label for="adreca_postal">Adreça postal:</label>
-        <input type="text" id="adreca_postal" name="adreca_postal">
+    <br><br>
 
-        <br>
+    <!-- Camp d'adreça postal -->
+    <label for="adreca_postal">Adreça postal:</label>
+    <input type="number" id="adreca_postal" name="adreca_postal">
 
-        <!-- Botó d'enviament del formulari -->
-        <input type="submit" value="Registrar">
-    </form>
+    <br><br>
+
+    <!-- Botó d'enviament del formulari -->
+    <input type="submit" value="Registrar" onclick="enviar()">
+
 </body>
+<script src="script.js"></script>
 
 </html>
