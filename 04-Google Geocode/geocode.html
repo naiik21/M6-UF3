@@ -6,19 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://maps.googleapis.com/maps/api/js?
-key=AIzaSyD1LqPNfReHlA4RTAU1YOuVKZxTqvCPa0g&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwEQr8flR0CtMZ-jSs9hK8lscYUMOtVPk&callback=initMap"
+        async defer></script>
     <title>Maps</title>
 </head>
 
-<body>
+<body onload="initMap()">
     <div id="map"></div>
     <input type="text" name="adreca" value="Carrer de Lluís Companys, 2, 08290 Cerdanyola del Vallès, Barcelona"
         id="adreca" />
-    <button type="button" class="btn btn-secondary" id="findLoc">Buscar adreça</button>
+    <button type="button" class="btn btn-secondary" id="findLoc" onclick="coordenades()">Buscar adreça</button>
     <br>
-    <input type="text" name="lat" value="" id="41.390205" placeholder="lat" />
-    <input type="text" name="lng" value="" id="2.154007" placeholder="lng" />
+    <input type="text" name="lat" id="lat" value="" placeholder="lat" />
+    <input type="text" name="lng" id="lng" value="" placeholder="lng" />
+    <br>
+    <button type="button" class="btn btn-secondary" id="geolocation" onclick="geolocat()">Geolocalització</button>
+
 </body>
 <script src="script.js"></script>
 
