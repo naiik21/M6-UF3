@@ -45,6 +45,7 @@ input.addEventListener("change", function (event) {
     fitxers = fitxers.concat(Array.from(input.files));
     showFiles()
     input.value = null; // El declarem com a null per poder ficar-hi més
+    console.log("hola")
 });
 
 // Comproba que s'hagin ficat archius
