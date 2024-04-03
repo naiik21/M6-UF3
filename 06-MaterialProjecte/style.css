@@ -1,0 +1,21 @@
+.is-valid {
+    border: 1px solid green;
+}
+
+.is-invalid {
+    border: 1px solid red;
+}
+
+#feedbackNom,
+#feedbackCognoms,
+#feedbackDNI,
+#feedbackEmail,
+#feedbackTelf {
+    color: red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
